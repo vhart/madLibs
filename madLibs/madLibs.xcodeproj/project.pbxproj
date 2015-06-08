@@ -14,6 +14,7 @@
 		C7E23F7F1B24C59C00BEE143 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E23F7E1B24C59C00BEE143 /* Images.xcassets */; };
 		C7E23F821B24C59C00BEE143 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E23F801B24C59C00BEE143 /* LaunchScreen.xib */; };
 		C7E23F8E1B24C59C00BEE143 /* madLibsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E23F8D1B24C59C00BEE143 /* madLibsTests.m */; };
+		C7E23F991B24E68C00BEE143 /* SecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E23F981B24E68C00BEE143 /* SecondaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		C7E23F871B24C59C00BEE143 /* madLibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = madLibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E23F8C1B24C59C00BEE143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E23F8D1B24C59C00BEE143 /* madLibsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = madLibsTests.m; sourceTree = "<group>"; };
+		C7E23F971B24E68C00BEE143 /* SecondaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondaryViewController.h; sourceTree = "<group>"; };
+		C7E23F981B24E68C00BEE143 /* SecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				C7E23F761B24C59C00BEE143 /* AppDelegate.m */,
 				C7E23F781B24C59C00BEE143 /* ViewController.h */,
 				C7E23F791B24C59C00BEE143 /* ViewController.m */,
+				C7E23F971B24E68C00BEE143 /* SecondaryViewController.h */,
+				C7E23F981B24E68C00BEE143 /* SecondaryViewController.m */,
 				C7E23F7B1B24C59C00BEE143 /* Main.storyboard */,
 				C7E23F7E1B24C59C00BEE143 /* Images.xcassets */,
 				C7E23F801B24C59C00BEE143 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				C7E23F7A1B24C59C00BEE143 /* ViewController.m in Sources */,
 				C7E23F771B24C59C00BEE143 /* AppDelegate.m in Sources */,
 				C7E23F741B24C59C00BEE143 /* main.m in Sources */,
+				C7E23F991B24E68C00BEE143 /* SecondaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

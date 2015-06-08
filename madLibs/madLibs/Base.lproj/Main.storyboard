@@ -80,6 +80,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="startButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wGs-W1-Nec"/>
+                                    <segue destination="55h-xm-OLo" kind="presentation" id="sBp-cQ-Ttc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yEA-MP-x4t">
@@ -183,8 +184,74 @@
             </objects>
             <point key="canvasLocation" x="379.5" y="305"/>
         </scene>
+        <!--Secondary View Controller-->
+        <scene sceneID="R3n-Rs-QtT">
+            <objects>
+                <viewController id="55h-xm-OLo" customClass="SecondaryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1hA-xo-aNe"/>
+                        <viewControllerLayoutGuide type="bottom" id="ozF-Re-Oog"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xhY-2q-GHp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a-cutest-puppies-11" translatesAutoresizingMaskIntoConstraints="NO" id="a3Q-C8-K9o">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="34" y="20" width="318" height="416"/>
+                                </variation>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.8500000000000002" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HWS-ig-D1k">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.73333334922790527" green="0.93333339691162109" blue="0.93725496530532837" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="363" width="215" height="142"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYf-5I-iM0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="170" y="536" width="42" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="back:" destination="55h-xm-OLo" eventType="touchUpInside" id="a8l-Hh-yy3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="a3Q-C8-K9o"/>
+                                <exclude reference="HWS-ig-D1k"/>
+                                <exclude reference="SYf-5I-iM0"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="a3Q-C8-K9o"/>
+                                <include reference="HWS-ig-D1k"/>
+                                <include reference="SYf-5I-iM0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="HWS-ig-D1k" id="Omg-Kb-zSM"/>
+                        <outlet property="view" destination="xhY-2q-GHp" id="Mdo-Al-ImN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkJ-5X-xD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.5" y="79"/>
+        </scene>
     </scenes>
     <resources>
         <image name="3.21.14-National-Puppy-Day5" width="720" height="720"/>
+        <image name="a-cutest-puppies-11" width="500" height="375"/>
     </resources>
 </document>

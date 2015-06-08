@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "SecondaryViewController.h"
 
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *name1;
 @property (weak, nonatomic) IBOutlet UITextField *name2;
 @property (weak, nonatomic) IBOutlet UITextField *name3;
@@ -37,6 +39,11 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startButton:(id)sender {
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     int days = [self.number.text integerValue];
     NSString *name1 = self.name1.text ;
     NSString *name2 = self.name2.text;
@@ -53,7 +60,10 @@
     NSString *occupation1 = self.occupation1.text ;
     NSString *occupation2 = self.occupation2.text;
     
-    NSLog(@"For %d days, %@ and his team have been tracking a monkey in the jungles of %@. All is well at first but then out of nowhere a %@ puppy appears ready to pounce. In a panic and looking for a way out, %@ %@ to distract the %@ beast!\nFleeing for their life, %@, the %@ among them stops to pick up her %@.  But the cuteness is too much and %@'s %@ falls off. Every man for themselves says %@ laughing like a %@.The team would never be the same..", days,name1,location,adj1,name2,verbs,adj2,name3,occupation1,noun,name3,name3,bodypart,name4,occupation2);
+    NSString *output = [NSString stringWithFormat:@"For %d days, %@ and his team have been tracking a monkey in the jungles of %@. All is well at first but then out of nowhere a %@ puppy appears ready to pounce. In a panic and looking for a way out, %@ %@ to distract the %@ beast!\nFleeing for their life, %@, the %@ among them stops to pick up her %@.  But the cuteness is too much and %@'s %@ falls off. Every man for themselves says %@ laughing like a %@.The team would never be the same..", days,name1,location,adj1,name2,verbs,adj2,name3,occupation1,noun,name3,bodypart,name4,occupation2];
+    
+    SecondaryViewController *secondaryController = segue.destinationViewController;
+    secondaryController.string = output;
 }
 
 @end
